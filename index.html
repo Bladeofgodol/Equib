@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eqube</title>
+
+  <!-- css links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="./style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class=" container-fluid bg-dark d-flex justify-content-center p-3">
+    <h1 class="bg-dark text-light px-0">EQUIB</h1>
+  </div>
+  <div class="container-fluid row">
+    <div class=" container-fluid col m-5">
+      <div class="d-flex justify-content-center p-5">
+        <form class="p-3 bg-light shadow rounded p-5 d-grid gap-3" onsubmit="return false">
+          <h3 class="bg-light p-3"> Add Name and Ammount</h3>
+          <div class="mb-3 d-flex bg-light justify-content-center align-items-center">
+            <label for="exampleInputEmail1" class="bg-light form-label">Name</label>
+            <input type="text" class="w-75 form-control" id="fullname" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3 d-flex bg-light justify-content-center align-items-center">
+            <label for="exampleInputPassword1" class=" bg-light form-label">Amount</label>
+            <input type="number" class="w-25 form-control" id="amount">
+          </div>
+          <div class="mb-3 d-flex justify-content-center align-items-center bg-light">
+            <button type="submit" class="btn btn-dark  align-items-center " onclick="add()">
+              <img src="https://img.icons8.com/nolan/64/enter-key.png" class="icon""/>
+              Submit
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <div class=" container-fluid col m-5 d-flex align-items-center justify-content-center">
+      <div id="currency-converter-265458" class="shadow rounded"><script type="text/javascript" src="https://www.cashbackforex.com/Content/remote/remote-widgets.js"></script><script type="text/javascript"> RemoteCalc({"Url":"https://www.cashbackforex.com", "TopPaneStyle":"YmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KCNmZmYgMjAlLCAjZjVmNWY1IDQ1JSk7IGNvbG9yOiBibGFjazsgYm9yZGVyOiBzb2xpZCAxcHggI2FhYTsgYm9yZGVyLWJvdHRvbTogbm9uZTsg","BottomPaneStyle":"YmFja2dyb3VuZDogI2YzZjNmMzsgYm9yZGVyOiBzb2xpZCAxcHggI2FhYTsgY29sb3I6IGJsYWNrOw==","ButtonStyle":"YmFja2dyb3VuZDogIzM0MzU0MDsgY29sb3I6IHdoaXRlOyBib3JkZXItcmFkaXVzOiAyMHB4Ow==","TitleStyle":"dGV4dC1hbGlnbjogbGVmdDsgZm9udC1zaXplOiA0MHB4OyBmb250LXdlaWdodDogNTAwOw==","TextboxStyle":"YmFja2dyb3VuZC1jb2xvcjogd2hpdGU7IGNvbG9yOiBibGFjazsgYm9yZGVyOiBzb2xpZCAxcHggI2FhYWFhYQ==","ContainerWidth":"665","HighlightColor":"#ffff00","IsDisplayTitle":false,"IsShowEmbedButton":false,"CompactType":"large","DefaultCurrencyFrom":"EUR","DefaultCurrencyTo":"USD","Calculator":"currency-converter","ContainerId":"currency-converter-265458"});</script></div>
+      </div>
+
+      <div class="container-fluid row">
+        <div class="container-fluid col m-5">
+          <table class="table table-light container-fluid w-100 p-3 rounded shadow ">
+            <thead>
+              <tr>
+
+                <th scope="col" colspan="2">Name</th>
+                <th scope="col">Amount</th>
+              </tr>
+            </thead>
+            <tbody id="usertable">
+
+              <tr>
+                <td colspan="4">
+                  <div class=" d-flex justify-content-center align-items-center bg-light">
+                    <button type="submit" class="btn btn-dark  align-items-center" onclick="pick()">
+                      <img src="https://img.icons8.com/fluency/48/null/dice.png" class="icon" />
+                      Roll</button>
+                  </div>
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="container-fluid col m-5 px-5 py-5 bg-light  shadow rounded">
+          <h3 class="bg-light mx-5 px-5 " id="congrats"></h3>
+          <br>
+          <h1 class="bg-light mx-5 px-5 text-danger" id="lucky"></h1>
+        </div>
+
+      </div>
+
+
+
+
+      <!-- js links -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+      </script>
+      <script src="./script.js"></script>
+</body>
+
+</html>
